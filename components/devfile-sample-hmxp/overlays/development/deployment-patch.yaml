@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hmxp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0043-tenant/tkrw-pr714-0075-0043-app/devfile-sample-hmxp@sha256:84f065055ae00d08c1d43f5587899565aafa96b372b91fb7302207caea86701b
+        name: my-nodejs
+        resources: {}
+status: {}
